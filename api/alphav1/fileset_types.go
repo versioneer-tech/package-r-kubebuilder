@@ -30,7 +30,7 @@ type FileSetSpec struct {
 
 	Hash         string `json:"hash"`
 	Path         string `json:"path"`
-	SourceName   string `json:"sourceName"`
+	Source       Source `json:"source"`
 	UserID       uint   `json:"userID"`
 	Expire       int64  `json:"expire"`
 	PasswordHash string `json:"password_hash,omitempty"`
@@ -43,7 +43,7 @@ type FileSetStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	Url string `json:"url,omitempty"`
+	ProxySource Source `json:"source"`
 }
 
 // +kubebuilder:object:root=true

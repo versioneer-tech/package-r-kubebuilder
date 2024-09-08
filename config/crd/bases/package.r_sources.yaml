@@ -39,20 +39,8 @@ spec:
           spec:
             description: SourceSpec defines the desired state of Source
             properties:
-              accessKeyId:
+              secretName:
                 type: string
-              bucket:
-                type: string
-              endpointUrl:
-                type: string
-              forcePathStyle:
-                type: boolean
-              region:
-                type: string
-              secretAccessKey:
-                type: string
-            required:
-            - forcePathStyle
             type: object
           status:
             description: SourceStatus defines the observed state of Source

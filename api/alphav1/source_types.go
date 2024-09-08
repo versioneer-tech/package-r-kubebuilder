@@ -28,12 +28,7 @@ type SourceSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	Bucket          string `json:"bucket,omitempty"`
-	AccessKeyId     string `json:"accessKeyId,omitempty"`
-	SecretAccessKey string `json:"secretAccessKey,omitempty"`
-	EndpointUrl     string `json:"endpointUrl,omitempty"`
-	Region          string `json:"region,omitempty"`
-	ForcePathStyle  bool   `json:"forcePathStyle"`
+	SecretName string `json:"secretName,omitempty"`
 }
 
 // SourceStatus defines the observed state of Source
