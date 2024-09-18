@@ -26,4 +26,13 @@ resources:
   kind: Source
   path: github.com/versioneer-tech/package-r-kubebuilder/api/alphav1
   version: alphav1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: package.r
+  group: package.r
+  kind: ObjectSet
+  path: github.com/versioneer-tech/package-r-kubebuilder/api/alphav1
+  version: alphav1
 version: "3"

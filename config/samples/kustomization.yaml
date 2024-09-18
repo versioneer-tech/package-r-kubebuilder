@@ -2,4 +2,5 @@
 resources:
 - package.r_alphav1_fileset.yaml
 - package.r_alphav1_source.yaml
+- package.r_alphav1_objectset.yaml
 # +kubebuilder:scaffold:manifestskustomizesamples

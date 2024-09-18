@@ -33,3 +33,29 @@ rules:
   - get
   - patch
   - update
+- apiGroups:
+  - package.r.package.r
+  resources:
+  - objectsets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - package.r.package.r
+  resources:
+  - objectsets/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - package.r.package.r
+  resources:
+  - objectsets/status
+  verbs:
+  - get
+  - patch
+  - update
