@@ -1,9 +1,0 @@
-apiVersion: package.r/alphav1
-kind: FileSet
-metadata:
-  labels:
-    app.kubernetes.io/name: package-r-kubebuilder
-    app.kubernetes.io/managed-by: kustomize
-  name: fileset-sample
-spec:
-  # TODO(user): Add fields here

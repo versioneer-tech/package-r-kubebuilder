@@ -2,9 +2,7 @@
 # since it depends on service name and namespace that are out of this kustomize package.
 # It should be run by config/default
 resources:
-- bases/package.r_filesets.yaml
 - bases/package.r_sources.yaml
-- bases/package.r.package.r_objectsets.yaml
 # +kubebuilder:scaffold:crdkustomizeresource
 
 patches:
@@ -14,9 +12,7 @@ patches:
 
 # [CERTMANAGER] To enable cert-manager, uncomment all the sections with [CERTMANAGER] prefix.
 # patches here are for enabling the CA injection for each CRD
-#- path: patches/cainjection_in_filesets.yaml
 #- path: patches/cainjection_in_sources.yaml
-#- path: patches/cainjection_in_objectsets.yaml
 # +kubebuilder:scaffold:crdkustomizecainjectionpatch
 
 # [WEBHOOK] To enable webhook, uncomment the following section
